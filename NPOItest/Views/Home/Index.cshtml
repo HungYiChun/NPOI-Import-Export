@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>NPOI Excel</h1>
+
+    <p>
+        <button class="btn btn-primary btn-lg" onclick="location.href='@Url.Action("EmptyExport", "NPOI")'">
+            Account Empty Export &raquo;
+        </button>
+    </p>
+    <br />
+    <p>
+        <button class="btn btn-primary btn-lg" onclick="location.href='@Url.Action("DataExport", "NPOI")'">
+            Account Data Export &raquo;
+        </button>
+    </p>
+    <br />
+    <button class="btn btn-primary btn-lg" onclick="location.href='@Url.Action("PDFExport", "NPOI")'">
+        PDF Export &raquo;
+    </button>
+</div>
