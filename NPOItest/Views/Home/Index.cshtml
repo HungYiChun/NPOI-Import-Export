@@ -6,18 +6,52 @@
     <h1>NPOI Excel</h1>
 
     <p>
-        <button class="btn btn-primary btn-lg" onclick="location.href='@Url.Action("EmptyExport", "NPOI")'">
+        <button class="btn btn-primary btn-lg" onclick="location.href='@Url.Action("EmptyExport_E", "NPOI")'">
             Account Empty Export &raquo;
         </button>
     </p>
     <br />
     <p>
-        <button class="btn btn-primary btn-lg" onclick="location.href='@Url.Action("DataExport", "NPOI")'">
+        <button class="btn btn-primary btn-lg" onclick="location.href='@Url.Action("DataExport_E", "NPOI")'">
             Account Data Export &raquo;
         </button>
     </p>
     <br />
-    <button class="btn btn-primary btn-lg" onclick="location.href='@Url.Action("PDFExport", "NPOI")'">
+    <button class="btn btn-primary btn-lg" onclick="location.href='@Url.Action("PDFExport_E", "NPOI")'">
         PDF Export &raquo;
     </button>
+    <br />
+    <br />
+    <form class="form-horizontal form-group" id="UploadForm" action="@Url.Action("Import_E", "NPOI")" method="post" enctype="multipart/form-data">
+        <label for="file" style="font-size:17px">Import Excel&nbsp;:</label>&nbsp;
+        <input class="form-control btn btn-default btn-lg" type="file" name="file" id="file" />
+        <input type="submit" value="Import Excel" class="btn btn-primary btn-lg" />
+    </form>
+</div>
+
+<div class="jumbotron">
+    <h1>NPOI Word</h1>
+
+    <p>
+        <button class="btn btn-primary btn-lg" onclick="location.href='@Url.Action("EmptyExport_W", "NPOI")'">
+            Account Empty Export &raquo;
+        </button>
+    </p>
+    <br />
+    <p>
+        <button class="btn btn-primary btn-lg" onclick="location.href='@Url.Action("DataExport_W", "NPOI")'">
+            Account Data Export &raquo;
+        </button>
+    </p>
+    <br />
+    <button class="btn btn-primary btn-lg" onclick="location.href='@Url.Action("PDFExport_W", "NPOI")'">
+        PDF Export &raquo;
+    </button>
+    <br />
+    <br />
+    <form class="form-horizontal form-group" id="UploadForm" action="@Url.Action("Import_W", "NPOI")" method="post" enctype="multipart/form-data">
+        <label for="file" style="font-size:17px">Import Word&nbsp;:</label>&nbsp;
+        <input class="form-control btn btn-default btn-lg" type="file" name="file" id="file" />
+        <input type="submit" value="Import Word" class="btn btn-primary btn-lg" />
+    </form>
 </div>
