@@ -2,9 +2,7 @@
 
 First 
 git clone this project.
-            git clone git@github.com:HungYiChun/NPOI-Import-Export.git
             
-
 Second 
 run this project by Visual studio (build vs2015).
 
