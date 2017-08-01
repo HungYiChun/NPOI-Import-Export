@@ -196,6 +196,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\InitDatabase.cs" />
     <Compile Include="Models\NPOIModel.cs" />
     <Compile Include="Models\Sevices\ConvertPDFHelper.cs" />
     <Compile Include="Models\Sevices\NPOIServices.cs" />

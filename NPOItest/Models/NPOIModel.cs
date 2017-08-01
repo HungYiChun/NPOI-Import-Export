@@ -10,6 +10,7 @@ namespace NPOItest.Models
         public NPOIModel()
             : base("name=NPOIModel")
         {
+            Database.SetInitializer(new InitDatabase());
         }
 
         public virtual DbSet<Account> Account { get; set; }

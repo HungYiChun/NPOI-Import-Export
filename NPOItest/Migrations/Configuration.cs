@@ -27,10 +27,6 @@ namespace NPOItest.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
-            context.Account.AddOrUpdate(x => x.Id,
-                new Account { Username = "admin", Password = "admin", Name = "Kevin", Sex = "Man", Email = "admin@NPOT.com", Company = "XXX_NO.1", Position = "R&D", Phone = "0000-0000" },
-                new Account { Username = "user", Password = "user", Name = "Durant", Sex = "Female", Email = "user@NPOT.com", Company = "AAA_NO.2", Position = "CEO", Phone = "0000-1111" }
-                );
         }
     }
 }
